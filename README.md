@@ -100,16 +100,6 @@ The Vehicle Registration System is a full-stack web application designed to stre
 
 ---
 
-## Test Cases
-
-| Test Case ID | Description                       | Input                        | Expected Output                |
-|--------------|-----------------------------------|------------------------------|--------------------------------|
-| TC-01        | User Registration                 | Valid user data              | Success message, user created  |
-| TC-02        | Login with valid credentials      | Email, password              | JWT token, dashboard access    |
-| TC-03        | Register Vehicle (authenticated)  | Vehicle details, JWT token   | Vehicle registered             |
-| ...          | ...                               | ...                          | ...                            |
-
----
 
 ## Future Enhancements
 
@@ -131,4 +121,4 @@ This project is for educational purposes (KPIT Nova Training).
 
 ## Contributors
 
-- [Your Name](https://github.com/pratiklad16)
+- [Pratik Lad](https://github.com/pratiklad16)
