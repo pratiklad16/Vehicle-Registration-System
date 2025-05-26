@@ -131,4 +131,4 @@ This project is for educational purposes (KPIT Nova Training).
 
 ## Contributors
 
-- [Your Name](https://github.com/<your-username>)
+- [Your Name](https://github.com/pratiklad16)
