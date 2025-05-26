@@ -45,17 +45,45 @@ The Vehicle Registration System is a full-stack web application designed to stre
 
 ## REST API Endpoints (Sample)
 
+## REST API Endpoints
+
 | Endpoint                                   | Method | Description                           |
 |---------------------------------------------|--------|---------------------------------------|
-| `/api/auth/login`                          | POST   | User/Admin login                      |
+| `/api/auth/login`                          | POST   | User/Admin login, returns JWT token and user info |
 | `/api/auth/signup`                         | POST   | User registration                     |
-| `/api/user/registerVehicle`                | POST   | Register a new vehicle                |
-| `/api/user/registerSparePart`              | POST   | Register a new spare part             |
 | `/api/user/GetUserProfile`                 | GET    | Get current user's profile            |
-| `/api/admin/getAllOwners`                  | GET    | Get all users (admin)                 |
-| `/api/admin/SpareParts`                    | GET    | Get all spare parts (admin)           |
+| `/api/user/EditUserProfile`                | PUT    | Update current user's profile         |
+| `/api/user/getUserVehicles`                | GET    | Get all vehicles registered by the current user |
+| `/api/user/RegisterVehicle`                | POST   | Register a new vehicle (user)         |
+| `/api/user/RegisterSparePart`              | POST   | Register a new spare part (user)      |
+| `/api/user/MySpareParts`                   | GET    | Get all spare parts registered by the user |
+| `/api/user/MyOrders`                       | GET    | Get all orders placed by the user     |
+| `/api/user/AllSpareParts`                  | GET    | Get all available spare parts         |
+| `/api/user/UserViewVehicleDetail/:vehicleId` | GET    | Get details of a specific vehicle (user) |
+| `/api/user/UserViewSparePartDetail/:partId` | GET    | Get details of a specific spare part (user) |
+| `/api/user/EditUserVehicle/:vehicleId`     | PUT    | Edit a specific vehicle (user)        |
+| `/api/user/EditUserSparePart/:partId`      | PUT    | Edit a specific spare part (user)     |
+| `/api/user/deleteSparePart/:partId`        | DELETE | Delete a spare part (user)            |
 | `/api/orders/user`                         | GET    | Get all orders for the current user   |
-| ...                                        | ...    | ...                                   |
+| `/api/orders/user/:userId`                 | GET    | Get all orders for a specific user (admin) |
+| `/api/orders/:orderId`                     | GET    | Get details of a specific order       |
+| `/api/admin/getAllOwners`                  | GET    | Get all users (admin)                 |
+| `/api/admin/DeleteUser/:userId`            | DELETE | Delete a user (admin)                 |
+| `/api/admin/owners/:userId`                | GET    | Get details of a specific user (admin) |
+| `/api/admin/ownerVehicles/:userId`         | GET    | Get all vehicles of a specific user (admin) |
+| `/api/admin/getAllVehicles`                | GET    | Get all vehicles (admin)              |
+| `/api/admin/deleteVehicle/:vehicleId`      | DELETE | Delete a vehicle (admin)              |
+| `/api/admin/vehicles/:vehicleId`           | GET    | Get details of a specific vehicle (admin) |
+| `/api/admin/SpareParts`                    | GET    | Get all spare parts (admin)           |
+| `/api/admin/deleteSparePart/:partId`       | DELETE | Delete a spare part (admin)           |
+| `/api/spare-parts`                         | GET    | Get all spare parts (general)         |
+| `/api/spare-parts/:partId`                 | GET    | Get details of a specific spare part  |
+| `/api/spare-parts/user/:userId`            | GET    | Get all spare parts registered by a specific user |
+| `/api/admin/viewCurrentProfile`            | GET    | Get current admin's profile           |
+| `/api/admin/updateProfile`                 | PUT    | Update admin's profile                |
+| `/api/admin/Orders`                        | GET    | Get all orders (admin)                |
+| `/api/admin/deleteOrder/:orderId`          | DELETE | Delete an order (admin)               |
+| `/api/admin/ViewOrderDetail/:orderId`      | GET    | Get details of a specific order (admin) |
 
 ---
 
@@ -100,7 +128,8 @@ The Vehicle Registration System is a full-stack web application designed to stre
 
 ---
 
-
+## Website Snapshot
+<img src="images/example.png" width="300" />
 ## Future Enhancements
 
 - PDF/CSV report generation
