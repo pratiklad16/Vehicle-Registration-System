@@ -129,6 +129,7 @@ The Vehicle Registration System is a full-stack web application designed to stre
 ---
 
 ## Website Snapshot
+<div align="center">
 <img src="Screenshot (13).png" width="300" />
 <img src="Screenshot (14).png" width="300" />
 <img src="Screenshot (15).png" width="300" />
@@ -143,6 +144,7 @@ The Vehicle Registration System is a full-stack web application designed to stre
 <img src="Screenshot (24).png" width="300" />
 <img src="Screenshot (25).png" width="300" />
 <img src="Screenshot (26).png" width="300" />
+</div>
 ## Future Enhancements
 
 - PDF/CSV report generation
